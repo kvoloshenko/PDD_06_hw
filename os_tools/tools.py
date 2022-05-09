@@ -7,8 +7,8 @@ import platform
 """
 
 
-def create_dir():
-    dir_name = input('   Введите имя папки: ')
+def create_dir(dir_name):
+    # dir_name = input('   Введите имя папки: ')
     if not os.path.exists(dir_name):
         # сздать папку передаем путь
         os.mkdir(dir_name)
@@ -19,9 +19,9 @@ def create_dir():
 """
 
 
-def del_dir():
+def del_dir(dir_name):
     # print(os.getcwd())
-    dir_name = input('   Введите имя папки или файла : ')
+    # dir_name = input('   Введите имя папки или файла : ')
     path = os.path.join(os.getcwd(), dir_name)
     # print('path=',path)
     if os.path.exists(path):

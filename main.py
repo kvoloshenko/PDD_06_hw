@@ -20,9 +20,11 @@ while True:
 
     choice = input('Выберите пункт меню : ')
     if choice == '1':
-        f.create_dir()
+        dir_name = input('   Введите имя папки: ')
+        f.create_dir(dir_name)
     elif choice == '2':
-        f.del_dir()
+        dir_name = input('   Введите имя папки или файла : ')
+        f.del_dir(dir_name)
     elif choice == '3':
         f.copy_dir()
     elif choice == '4':
